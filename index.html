@@ -16,11 +16,17 @@
     <header class="site-header" id="home">
       <nav class="nav container" aria-label="Primary navigation">
         <a class="logo" href="#home">Kshitij Patel</a>
-        <button class="nav__toggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="nav-controls">
+          <button class="version-toggle" id="versionToggle" aria-label="Toggle version">
+            <span class="version-toggle__label">Short</span>
+            <span class="version-toggle__switch"></span>
+          </button>
+          <button class="nav__toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
         <ul class="nav__list">
           <li><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -44,10 +50,10 @@
             <p class="subtitle">Software Engineer &amp; Cybersecurity Enthusiast</p>
             <div class="hero-text">
               <p>
-                MSci Computer Science student at King’s College London focused on offensive security and inclusive software
+                MSci Computer Science student at King's College London focused on offensive security and inclusive software
                 engineering. I translate complex security concepts into approachable experiences for teams and stakeholders.
               </p>
-              <p>
+              <p class="long-version-only">
                 Recent work spans volunteer penetration testing, LLM token explainability research, and leading robotics
                 showcases with the Research in Electronics society. Currently preparing for OSCP after completing HackTheBox
                 CPTS.
@@ -156,7 +162,7 @@
             <p class="cert-desc">Certified Professional · Currently preparing</p>
           </article>
 
-          <article class="cert-card">
+          <article class="cert-card long-version-only">
             <div class="cert-header">
               <h3>Junior Penetration Tester</h3>
               <span class="cert-status cert-status--completed">Completed</span>
@@ -165,7 +171,7 @@
             <p class="cert-desc">Comprehensive penetration testing fundamentals</p>
           </article>
 
-          <article class="cert-card">
+          <article class="cert-card long-version-only">
             <div class="cert-header">
               <h3>SOC Level 1</h3>
               <span class="cert-status cert-status--completed">Completed</span>
@@ -190,7 +196,7 @@
               </div>
               <p class="education-institution">King's College London, University of London</p>
               <p class="education-details">Currently in 4th Year · BCS Accreditation</p>
-              <p class="education-description">
+              <p class="education-description long-version-only">
                 Integrated Masters program focusing on advanced computer science principles, software engineering, and cybersecurity.
               </p>
             </div>
@@ -205,8 +211,8 @@
               <p class="education-institution">Wembley High Technology College</p>
               <div class="education-details">
                 <p><strong>A-Levels:</strong> AAA in Biology, Chemistry, and Mathematics</p>
-                <p><strong>AS Level:</strong> A in Further Mathematics</p>
-                <p><strong>GCSEs:</strong> 14 qualifications including Grade 9 in Mathematics, Grade 8 in English, and 9-8-8 in Triple Science</p>
+                <p class="long-version-only"><strong>AS Level:</strong> A in Further Mathematics</p>
+                <p class="long-version-only"><strong>GCSEs:</strong> 14 qualifications including Grade 9 in Mathematics, Grade 8 in English, and 9-8-8 in Triple Science</p>
               </div>
             </div>
           </article>
@@ -275,7 +281,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card long-version-only">
             <div class="project-header">
               <h3>Robotic hand tracking</h3>
               <p class="project-role">Software lead · 6 months</p>
@@ -293,7 +299,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card long-version-only">
             <div class="project-header">
               <h3>COVID-19 statistics tracker</h3>
               <p class="project-role">Backend developer · 6 months</p>
@@ -311,7 +317,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card long-version-only">
             <div class="project-header">
               <h3>Scala compiler development</h3>
               <p class="project-role">Individual project · 5 months</p>
@@ -343,8 +349,8 @@
               <p class="timeline-date">Amazon & Waltham Forest Council · Nov 2025 – Present</p>
               <ul>
                 <li>Developing software and AI solutions to automate and summarize parking ticket appeals.</li>
-                <li>Streamlining the appeals process for both citizens and council officers using AWS infrastructure.</li>
-                <li>Implementing DevOps practices to ensure reliable deployment and scaling of AI-powered systems.</li>
+                <li class="long-version-only">Streamlining the appeals process for both citizens and council officers using AWS infrastructure.</li>
+                <li class="long-version-only">Implementing DevOps practices to ensure reliable deployment and scaling of AI-powered systems.</li>
               </ul>
             </div>
           </article>
@@ -354,12 +360,12 @@
               <p class="timeline-date">Charity organisation · Jun 2025 – Present</p>
               <ul>
                 <li>Deliver scoped engagements and red-team style assessments for nonprofit systems.</li>
-                <li>Map attack vectors and communicate pragmatic remediation approaches.</li>
-                <li>Produce actionable write-ups for leadership and engineering teams.</li>
+                <li class="long-version-only">Map attack vectors and communicate pragmatic remediation approaches.</li>
+                <li class="long-version-only">Produce actionable write-ups for leadership and engineering teams.</li>
               </ul>
             </div>
           </article>
-          <article class="timeline-item">
+          <article class="timeline-item long-version-only">
             <div class="timeline-content">
               <h3>Part-time Software developer</h3>
               <p class="timeline-date">The Kusp Hub · Jun 2024 – Present</p>
@@ -388,8 +394,8 @@
             <p class="extracurricular-org">King's College London</p>
             <ul>
               <li>Collaborated with universities like Cambridge to build robots for competitions such as Unibots.</li>
-              <li>Led multiple software development initiatives, guiding teams and driving project success.</li>
-              <li>Secured £600 in funding for the society through innovative project proposals and demos.</li>
+              <li class="long-version-only">Led multiple software development initiatives, guiding teams and driving project success.</li>
+              <li class="long-version-only">Secured £600 in funding for the society through innovative project proposals and demos.</li>
             </ul>
           </article>
 
@@ -401,12 +407,12 @@
             <p class="extracurricular-org">King's College London</p>
             <ul>
               <li>Active member of the competitive cybersecurity team representing King's College London.</li>
-              <li>Participate in CTF competitions from SANS Institute, Hack The Box, and TryHackMe.</li>
-              <li>Collaborate with teammates to solve complex security challenges and improve offensive/defensive skills.</li>
+              <li class="long-version-only">Participate in CTF competitions from SANS Institute, Hack The Box, and TryHackMe.</li>
+              <li class="long-version-only">Collaborate with teammates to solve complex security challenges and improve offensive/defensive skills.</li>
             </ul>
           </article>
 
-          <article class="extracurricular-card">
+          <article class="extracurricular-card long-version-only">
             <div class="extracurricular-header">
               <h3>Cybersecurity Instructor</h3>
               <span class="extracurricular-role">KCL Cyber Security Society</span>
